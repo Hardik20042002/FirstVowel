@@ -1,0 +1,27 @@
+<html>
+<head> 
+<title>Functions</title>
+</head> 
+<body>
+	<center>
+	<label for="string">Enter the string input</label>
+	<input type="text" name="string" id="1" height="5" width="30">
+	<br><br>
+	<button onclick="sol()">click me</button>
+	<br><br>
+	</center>
+	<h3 id="res1"></h3>
+	<h3 id="res2"></h3>
+	<script>
+	function sol(){
+		var s=document.getElementById("1").value;        
+        for(var i=0;i<s.length;i++){
+                if(s[i]==='a'||s[i]==='e'||s[i]==='i'||s[i]==='o'||s[i]==='u'||s[i]==='A'||s[i]==='E'||s[i]==='I'||s[i]==='O'||s[i]==='U'){
+                        document.getElementById("res1").innerHTML="First vowel from left is '"+s[i]+"' present at index "+i;
+                        break;
+                }
+		}
+	}
+	</script>
+</body>
+</html>
